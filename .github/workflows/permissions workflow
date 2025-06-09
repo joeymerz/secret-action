@@ -1,0 +1,13 @@
+name: Example Workflow
+on:
+  push:
+    branches: [ main ]
+permissions:
+  issues: write
+  pull-requests: write
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Perform action
+        run: echo "Using GITHUB_TOKEN with custom permissions"
