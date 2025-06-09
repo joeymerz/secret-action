@@ -1,0 +1,8 @@
+- name: Push changes
+  run: |
+    git config user.name "GitHub Actions Bot"
+    git config user.email "actions@github.com"
+    git commit -m "Automated commit"
+    git push origin main
+  env:
+    GITHUB_TOKEN: ${{ github.token }}
